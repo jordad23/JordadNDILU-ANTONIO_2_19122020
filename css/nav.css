@@ -35,24 +35,24 @@ nav a:hover {
     }
     nav a:nth-of-type(2) {
         grid-area: hebergements;
-        /* margin-top: 75px; */
-        /* margin-left: -135px; */
     }
     nav a:nth-of-type(3) {
         grid-area: activites;
-        /* margin-top: 75px; */
-        /* margin-left: 15px; */
     }
     nav a:last-of-type {
         grid-area: inscrire;
-        /* margin-top: 20px; */
-        /* margin-left: -115px; */
         justify-self: end;
         margin-right: 5px;
-      
     }
 
-
+nav a:nth-of-type(2), nav a:nth-of-type(3){
+        border-bottom: 1px solid grey;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        height: 2rem;
+     
+}
 
 
     a {
@@ -72,7 +72,7 @@ nav a:hover {
       font-size: 1rem;
       width: fit-content;
       margin: .4rem 0;
-      margin-left: -1rem;
+      /* margin-left: -1rem; */
     }
     .fa-map-marker-alt {
       content: "f3c5";
@@ -148,13 +148,13 @@ nav a:hover {
    
     
     .filtre {
-      border: 2px solid #F2F2F2;
+      border: 1px solid #F2F2F2;
       width: fit-content;
       display: inline-flex;
       border-radius: 1rem;
       align-items: center;
-      padding-right: .5rem;
-      margin-left: -2rem;
+      /* padding-right: .5rem; */
+      margin-left: .5rem;
     }
     .filtre::before {
       background-color: rgb(203, 222, 231);
@@ -167,22 +167,20 @@ nav a:hover {
       justify-content: center;
       align-items: center;
       margin-left: -0.5rem;
+      margin-right: 0.5rem;
+      color: rgb(0, 102, 255);
     }
     .filtre.eco::before {
       content: "\f53a";
-      color: rgb(0, 102, 255);
     }
     .filtre.familial::before {
       content: "\f1ae";
-      color: rgb(0, 102, 255);
     }
     .filtre.romantique::before {
       content: "\f004";
-      color: rgb(0, 102, 255);
     }
     .filtre.animaux::before {
       content: "\f6d3";
-      color: rgb(0, 102, 255);
     }
     button:hover {
       color: red;
@@ -210,10 +208,15 @@ nav a:first-of-type {
     width: 50%;
     justify-self: flex-start;
 }
+
+
+nav a:nth-of-type(2), nav a:nth-of-type(3){
+    border-bottom:none;
+    height:initial;
+}
 nav a:hover {
     border-top: 2px solid var(--bleu);
     text-align: center;
-    /*     border: 1px solid red; */
     max-width: 380px;
     color: black;
 }

@@ -1,6 +1,4 @@
-@import "./article.css";
-@import "./nav.css";
-@import "./section.css";
+
 :root {
     --bleu: rgb(0, 102, 255);
 }
@@ -22,7 +20,7 @@ p {
     padding-left: 1rem;
 }
 
-p.info::before {
+h5.info::before {
     content: "\f129";
     font-family: "Font Awesome 5 Free";
     color: rgb(0, 102, 255);
@@ -34,7 +32,7 @@ p.info::before {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    margin-left: -2rem;
+    margin-left: 0.5rem;
 }
 
 .fa-chart-line {
@@ -83,7 +81,7 @@ label button::before {
 footer {
     background-color: #F2F2F2;
     color: black;
-    height: 200%;
+    /* height: 200%; */
     width: 100%;
     margin: auto;
     text-align: justify;
@@ -114,9 +112,18 @@ footer ul::before {
 @media screen AND (min-width:1024px) {
     main {
         display: flex;
-        flex-direction: row-reverse;
     }
 
+
+    h1
+    {
+        margin-left: 1rem;
+    }
+
+    label {
+        /* width: 125%; */
+        margin-left: 1rem;
+    } 
 
    
     footer {
