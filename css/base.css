@@ -1,35 +1,28 @@
-
 :root {
     --bleu: rgb(0, 102, 255);
 }
 
 body {
     font-family: "raleway";
-    margin:0;
-}
-@media screen AND (min-width:768px){
- body {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1440px;
-}   
+    margin: 0;
 }
 
-label {
-    
-    /* width: 125%; */
-    
-} 
+@media screen AND (min-width:768px) {
+    body {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1440px;
+    }
+}
 
 p {
-    /* font-size: 95%; */
     padding-left: 1rem;
 }
 
 h5.info::before {
     content: "\f129";
     font-family: "Font Awesome 5 Free";
-    color:rgb(0, 102, 255);
+    color: rgb(0, 102, 255);
     border: 1px solid grey;
     display: inline-flex;
     width: 1.5rem;
@@ -53,13 +46,9 @@ h5.info::before {
 
 footer {
     background-color: #F2F2F2;
-    /* color: black; */
-    /* height: 200%; */
     width: 100%;
     margin: auto;
     text-align: justify;
-    /* padding: 32px; */
-    /* margin-bottom: 150px; */
     line-height: 30px;
     display: grid;
 }
@@ -74,37 +63,18 @@ footer ul::before {
     font-weight: bold;
 }
 
-
-
-
 @media screen AND (min-width:1024px) {
     main {
         display: flex;
     }
-
-
-    h1
-    {
+    h1 {
         margin-left: 1rem;
     }
-
-
-
-   
     footer {
         height: 10rem;
         width: auto;
         border: 1px solid white;
         grid-template-columns: auto auto auto auto;
         grid-template-rows: 4rem 12rem 4rem 4rem 12rem;
- }
-
-
- 
-
-
+    }
 }
-
-
-
-

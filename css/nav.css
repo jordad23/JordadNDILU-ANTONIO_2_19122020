@@ -6,7 +6,19 @@ img#logo {
 }
 
 
+#search{
+  display: block;
+  margin: 0;
+}
 
+#search {
+  display: block;
+  margin: 0;
+}
+#search input{
+  margin-left: -.3rem;
+  min-width: 15rem;
+}
 
 button {
   background-color: white;
@@ -16,14 +28,14 @@ button {
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-  margin-right: 4rem;
+  margin-right: 1rem;
   margin-left: -1rem;
 }
 
 
 
 
-label button {
+#search button {
   color: white;
   background-color: rgb(0, 102, 255);
   border: none;
@@ -34,20 +46,14 @@ label button {
   align-items: center;
   border-radius: 12px 12px 12px 12px;
   width: 3.5rem;
+  margin-left: -1rem;
+  margin-right: 0;
 }
 
-
-
-
-label button::before {
+#search button::before {
   content: "\f002";
   font-family: 'Font Awesome 5 Free';
 }
-
-
-
-
-
 
 nav {
   display: grid;
@@ -55,8 +61,6 @@ nav {
     "logo inscrire"
     "hebergements activites";
   width: 100%;
-  /*         border:1px solid green; */
-  /* justify-items: stretch; */
   grid-template-columns: 50% 50%;
   justify-items: center;
   align-items: center;
@@ -148,22 +152,14 @@ input {
 
 
 
-label {
-  display: grid;
-  font-size: 1rem;
-  width: calc( 100% - 2rem);
-  max-width: 400px;
-  grid-template-columns: 2.5rem auto 3.5rem;
-}
 
 
 
 
 
 
-header>* {
-  margin: 1rem;
-}
+
+
 
 
 
@@ -338,12 +334,12 @@ button:hover {
 
 @media screen AND (min-width:768px) {
   .fa-map-marker-alt {
-    content: "f3c5";
+    content: "\f3c5";
     font-family: "Font Awesome 5 Free";
     border: none;
     display: inline-flex;
     width: 2.5rem;
-    height: 2.3rem;
+    height: 2.2rem;
     font-weight: bold;
     justify-content: center;
     align-items: center;
@@ -412,7 +408,7 @@ button:hover {
 
 
 
-  label button::before {
+  #search button::before {
     content: "rechercher";
     font-family: Raleway;
     width: 5.5rem;
@@ -421,11 +417,11 @@ button:hover {
 
 
 
-  label button {
+  #search button {
     padding-left: 1rem;
     padding-right: 1rem;
-    width: auto; 
-    margin: 0;
+    width: auto;
+   
     border: none;
     display: inline-flex;
     height: 2.2rem;
@@ -433,13 +429,18 @@ button:hover {
     justify-content: center;
     align-items: center;
     border-radius: 0 12px 12px 0;
-    margin-right: 4rem;
+   
     width: 5rem;
   }
 }
 
 
-
+@media screen AND (max-width:768px){
+    header>*:not(nav) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+}
 
 
 
@@ -454,8 +455,5 @@ button:hover {
 
 
 
-  label {
-    grid-template-columns: 2.5rem auto 6rem;
-    margin-left: 1rem;
-  }
+  label {/*     grid-template-columns: 2.5rem auto 6rem; */margin-left: 1rem;}
 }
